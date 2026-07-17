@@ -322,6 +322,66 @@ h3 { font-size: 1.25rem; }
 .note { padding: 13px 16px; border-left: 3px solid var(--brand); background: var(--surface-2); border-radius: 0 10px 10px 0; color: var(--text-muted); font-size: .95rem; }
 .note b { color: var(--text); font-weight: 700; }
 
+/* So sánh các phiên bản Prompt */
+.prompt-task { margin-top: 22px; }
+.prompt-task:first-of-type { margin-top: 14px; }
+.ptask-title { font-size: 1.05rem; font-weight: 700; color: var(--text); margin-bottom: 12px; display: flex; align-items: center; gap: 11px; }
+.ptask-title .n { width: 27px; height: 27px; flex-shrink: 0; border-radius: 8px; background: var(--gradient); color: #fff; display: grid; place-items: center; font-size: .82rem; font-weight: 800; box-shadow: var(--shadow-brand); }
+.prompt-versions { display: grid; gap: 10px; }
+.pv { padding: 13px 16px; border-radius: 12px; border: 1px solid var(--border); border-left: 4px solid var(--border-strong); background: var(--surface-2); }
+.pv-label { display: inline-block; font-family: var(--mono); font-size: .66rem; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; margin-bottom: 7px; padding: 2px 9px; border-radius: 6px; }
+.pv-text { color: var(--text-muted); font-size: .93rem; line-height: 1.6; }
+.pv-text b { color: var(--text); font-weight: 600; }
+.pv-basic { border-left-color: var(--text-soft); }
+.pv-basic .pv-label { background: var(--bg-soft); color: var(--text-soft); }
+.pv-better { border-left-color: var(--brand-2); }
+.pv-better .pv-label { background: var(--brand-soft); color: var(--brand-2); }
+.pv-adv { border-left-color: #10b981; }
+.pv-adv .pv-label { background: color-mix(in srgb, #10b981 16%, transparent); color: #0d9f74; }
+[data-theme="dark"] .pv-adv .pv-label { color: #34d399; }
+
+/* Nguyên tắc (grid 2 cột) */
+.principles { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 14px; }
+.principle { padding: 15px 17px; border: 1px solid var(--border); border-radius: 12px; background: var(--surface-2); }
+.principle .p-key { display: flex; align-items: center; gap: 8px; font-weight: 800; color: var(--brand); margin-bottom: 5px; }
+.principle .p-key svg { width: 17px; height: 17px; }
+.principle p { color: var(--text-muted); font-size: .92rem; margin: 0; }
+@media (max-width: 640px) { .principles { grid-template-columns: 1fr; } }
+
+/* Lưới công cụ */
+.tool-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 14px; }
+.tool { padding: 16px 18px; border: 1px solid var(--border); border-radius: 14px; background: var(--surface-2); }
+.tool-head { display: flex; align-items: center; gap: 12px; margin-bottom: 10px; }
+.tool-ico { width: 42px; height: 42px; border-radius: 11px; background: var(--gradient-soft); color: var(--brand); display: grid; place-items: center; flex-shrink: 0; }
+.tool-ico svg { width: 22px; height: 22px; }
+.tool-role { font-family: var(--mono); font-size: .66rem; text-transform: uppercase; letter-spacing: .05em; color: var(--brand-2); }
+.tool-name { font-weight: 800; color: var(--text); font-size: 1.02rem; line-height: 1.2; }
+.tool ul { display: grid; gap: 6px; }
+.tool ul li { position: relative; padding-left: 16px; color: var(--text-muted); font-size: .89rem; line-height: 1.5; }
+.tool ul li::before { content: ""; position: absolute; left: 2px; top: 8px; width: 5px; height: 5px; border-radius: 50%; background: var(--brand); }
+.tool ul li b { color: var(--text); font-weight: 600; }
+@media (max-width: 640px) { .tool-grid { grid-template-columns: 1fr; } }
+
+/* Ô số liệu */
+.stat-tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; margin-top: 14px; }
+.stat-tile { padding: 18px; border: 1px solid var(--border); border-radius: 14px; background: var(--surface-2); text-align: center; }
+.stat-tile b { display: block; font-size: 1.9rem; font-weight: 800; line-height: 1.1; }
+.stat-tile span { font-size: .84rem; color: var(--text-muted); }
+
+/* Thách thức & giải pháp */
+.cs-list { display: grid; gap: 14px; margin-top: 14px; }
+.cs-item { border: 1px solid var(--border); border-radius: 14px; overflow: hidden; }
+.cs-row { padding: 13px 16px; }
+.cs-challenge { background: color-mix(in srgb, #f43f5e 7%, var(--surface-2)); border-left: 4px solid #f43f5e; }
+.cs-solution { border-left: 4px solid #10b981; border-top: 1px solid var(--border); }
+.cs-tag { font-family: var(--mono); font-size: .66rem; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; margin-bottom: 5px; display: block; }
+.cs-challenge .cs-tag { color: #e11d48; }
+[data-theme="dark"] .cs-challenge .cs-tag { color: #fb7185; }
+.cs-solution .cs-tag { color: #0d9f74; }
+[data-theme="dark"] .cs-solution .cs-tag { color: #34d399; }
+.cs-row p { color: var(--text-muted); font-size: .92rem; margin: 0; }
+.cs-row b { color: var(--text); font-weight: 700; }
+
 /* ---------- 9. Summary — thẻ đánh số ---------- */
 .sum-list { display: grid; gap: 24px; max-width: 900px; }
 .sum-card { position: relative; overflow: hidden; padding: 34px 36px; }
