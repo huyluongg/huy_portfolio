@@ -382,6 +382,18 @@ h3 { font-size: 1.25rem; }
 .cs-row p { color: var(--text-muted); font-size: .92rem; margin: 0; }
 .cs-row b { color: var(--text); font-weight: 700; }
 
+/* Sản phẩm nội dung (bài viết số) */
+.content-piece { margin-top: 14px; border: 1px solid var(--border); border-radius: 16px; background: var(--surface-2); padding: 22px 24px; }
+.cp-meta { font-family: var(--mono); font-size: .7rem; text-transform: uppercase; letter-spacing: .05em; color: var(--brand); margin-bottom: 6px; }
+.cp-title { font-size: 1.2rem; font-weight: 800; color: var(--text); letter-spacing: -.01em; padding-bottom: 14px; border-bottom: 1px solid var(--border); }
+.cp-section { display: flex; align-items: center; gap: 10px; font-size: 1.02rem; font-weight: 800; color: var(--text); margin: 20px 0 8px; }
+.cp-dot { width: 11px; height: 11px; border-radius: 50%; flex-shrink: 0; }
+.content-piece p { color: var(--text-muted); margin-bottom: 8px; font-size: .95rem; }
+.content-piece ul { margin: 4px 0 8px; display: grid; gap: 6px; }
+.content-piece ul li { position: relative; padding-left: 18px; color: var(--text-muted); font-size: .93rem; }
+.content-piece ul li::before { content: ""; position: absolute; left: 3px; top: 9px; width: 5px; height: 5px; border-radius: 50%; background: var(--brand); }
+.content-piece b { color: var(--text); font-weight: 700; }
+
 /* ---------- 9. Summary — thẻ đánh số ---------- */
 .sum-list { display: grid; gap: 24px; max-width: 900px; }
 .sum-card { position: relative; overflow: hidden; padding: 34px 36px; }
