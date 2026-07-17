@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="vi" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Giới thiệu — Portfolio Kỹ thuật số</title>
+  <meta name="description" content="Portfolio Kỹ thuật số — môn Nhập môn Công nghệ số và Ứng dụng Trí tuệ nhân tạo." />
+  <meta name="theme-color" content="#6366f1" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8E%93%3C/text%3E%3C/svg%3E" />
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem("theme");
+        if (!t) t = matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+        document.documentElement.setAttribute("data-theme", t);
+      } catch (e) {}
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ============ HEADER ============ -->
+  <header class="header">
+    <div class="container nav">
+      <a href="index.html" class="brand">
+        <span class="brand-mark" data-cfg="initials">P</span>
+        <span>
+          <span data-cfg="fullName">Portfolio Kỹ thuật số</span>
+          <span class="brand-sub">Portfolio Kỹ thuật số</span>
+        </span>
+      </a>
+      <nav class="nav-links" aria-label="Điều hướng chính">
+        <a href="index.html" class="active">Giới thiệu</a>
+        <a href="projects.html">Dự án</a>
+        <a href="summary.html">Tổng kết</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="icon-btn theme-toggle" aria-label="Đổi giao diện Sáng/Tối">
+          <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+          <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        </button>
+        <button class="icon-btn nav-toggle" aria-label="Mở menu" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ HERO / GIỚI THIỆU ============ -->
+  <section class="hero">
+    <span class="blob blob-1"></span>
+    <span class="blob blob-2"></span>
+    <div class="container hero-grid">
+      <div class="hero-text reveal">
+        <span class="eyebrow">Portfolio Kỹ thuật số</span>
+        <h1>Xin chào, tôi là <span class="gradient-text" data-cfg="fullName">[Họ và tên của bạn]</span>.</h1>
+
+        <!-- ✏️ Viết đoạn giới thiệu ngắn về bản thân (họ tên, ngành học, sở thích) -->
+        <p class="lead">
+          [✏️ Giới thiệu ngắn gọn về bản thân: bạn là sinh viên ngành gì, ở trường nào,
+          bạn yêu thích điều gì trong lĩnh vực công nghệ số và trí tuệ nhân tạo, cùng định
+          hướng phát triển của bạn.]
+        </p>
+
+        <!-- Thông tin học tập -->
+        <div class="hero-chips">
+          <span class="chip-info"><b>Ngành:</b> <span data-cfg="major">[Ngành học]</span></span>
+          <span class="chip-info"><b>Trường:</b> <span data-cfg="school">[Trường]</span></span>
+          <span class="chip-info"><b>MSSV:</b> <span data-cfg="studentId">[Mã SV]</span></span>
+          <span class="chip-info"><b>Lớp HP:</b> <span data-cfg="classHP">[Lớp học phần]</span></span>
+          <span class="chip-info"><b>Môn:</b> <span data-cfg="course">Nhập môn Công nghệ số &amp; AI</span></span>
+        </div>
+      </div>
+
+      <div class="hero-photo reveal">
+        <div class="photo-frame">
+          <img src="assets/placeholder-avatar.svg" alt="Ảnh đại diện"
+               data-cfg-src="profileImage" data-fallback="assets/placeholder-avatar.svg" />
+        </div>
+        <div class="badge-float badge-1">
+          <span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2a10 10 0 1 0 10 10"/><path d="M12 6v6l4 2"/></svg></span>
+          <span>AI &amp; Công nghệ số</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MỤC TIÊU ============ -->
+  <section class="section-tight">
+    <div class="container">
+      <div class="goals-2">
+        <div class="card goal-card reveal">
+          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m22 4-10 10.01-3-3"/></svg></div>
+          <h3>Mục tiêu học tập</h3>
+          <p>[✏️ Chia sẻ mục tiêu học tập và định hướng phát triển cá nhân của bạn — bạn muốn
+          thành thạo những kỹ năng số nào, hướng tới điều gì trong tương lai.]</p>
+        </div>
+        <div class="card goal-card reveal">
+          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></div>
+          <h3>Mục tiêu của Portfolio</h3>
+          <p>[✏️ Trình bày mục tiêu của Portfolio này, ví dụ: "Thể hiện các kỹ năng số đã học",
+          "Lưu trữ sản phẩm cá nhân để dễ dàng truy cập và chia sẻ", làm hồ sơ giới thiệu năng lực…]</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer-in">
+      <p>© <span data-year>2026</span> · <span data-cfg="fullName">[Họ và tên]</span> — Portfolio Kỹ thuật số</p>
+      <div class="contact">
+        <span>Liên hệ:</span>
+        <a href="#" data-cfg-mail="schoolEmail">[email trường]</a>
+        <span>·</span>
+        <a href="#" data-cfg-mail="email">[email cá nhân]</a>
+      </div>
+    </div>
+  </footer>
+
+  <button class="to-top" aria-label="Lên đầu trang">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
+  </button>
+
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
