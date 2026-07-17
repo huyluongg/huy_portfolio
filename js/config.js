@@ -8,19 +8,20 @@
 
 const CONFIG = {
   /* ---------- Định danh ---------- */
-  fullName:  "[Họ và tên của bạn]",
-  initials:  "P",              // 1–2 chữ cái viết tắt trên logo (VD: "TH")
+  fullName:  "Lương Gia Huy",
+  initials:  "GH",            // 1–2 chữ cái viết tắt trên logo
 
   /* ---------- Thông tin học tập (hiển thị dạng thẻ ở trang chủ) ---------- */
-  major:     "[Ngành học]",                       // Ngành
-  school:    "Đại học Quốc gia Hà Nội (VNU)",      // Trường
-  studentId: "[Mã sinh viên]",                    // MSSV
-  classHP:   "[Lớp học phần]",                     // Lớp HP (VD: VNU1001_E252011)
+  major:     "Kinh tế Quốc tế",                   // Ngành
+  school:    "ĐH Kinh tế – ĐHQGHN (UEB)",         // Trường
+  studentId: "25050923",                          // MSSV
+  classHP:   "QH-2025-E – KTQT 1",                // Lớp (khóa)
+  lopHP:     "VNU1001_E252046",                    // Lớp học phần
   course:    "Nhập môn Công nghệ số & AI",         // Môn
 
   /* ---------- Liên hệ (hiển thị ở chân trang) ---------- */
-  schoolEmail: "[mã_sv@vnu.edu.vn]",   // Email trường
-  email:       "[email@gmail.com]",    // Email cá nhân
+  schoolEmail: "25050923@vnu.edu.vn",   // Email trường (kiểm tra lại giúp mình nhé)
+  email:       "[email cá nhân của bạn]",   // ✏️ Điền email cá nhân (Gmail…) nếu muốn hiển thị
 
   /* ---------- Link nộp bài (điền sau khi upload) ---------- */
   portfolioUrl: "#",   // URL công khai của Portfolio
