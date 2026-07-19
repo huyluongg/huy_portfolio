@@ -21,7 +21,7 @@ const CONFIG = {
 
   /* ---------- Liên hệ (hiển thị ở chân trang) ---------- */
   schoolEmail: "25050923@vnu.edu.vn",   // Email trường (kiểm tra lại giúp mình nhé)
-  email:       "[email cá nhân của bạn]",   // ✏️ Điền email cá nhân (Gmail…) nếu muốn hiển thị
+  email:       "huy29apr@gmail.com",   // Email cá nhân
 
   /* ---------- Link nộp bài (điền sau khi upload) ---------- */
   portfolioUrl: "#",   // URL công khai của Portfolio

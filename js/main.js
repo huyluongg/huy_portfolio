@@ -70,18 +70,7 @@
   onScroll();
   if (toTop) toTop.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
 
-  /* ---------- 6. Danh sách Dự án — mở rộng / thu gọn ---------- */
-  document.querySelectorAll(".proj-head").forEach((head) => {
-    head.addEventListener("click", () => {
-      const item = head.closest(".proj-item");
-      if (item) {
-        const open = item.classList.toggle("open");
-        head.setAttribute("aria-expanded", open);
-      }
-    });
-  });
-
-  /* ---------- 7. Hiệu ứng hiện dần khi cuộn ---------- */
+  /* ---------- 6. Hiệu ứng hiện dần khi cuộn ---------- */
   const revealEls = document.querySelectorAll(".reveal");
   if ("IntersectionObserver" in window && revealEls.length) {
     const io = new IntersectionObserver(

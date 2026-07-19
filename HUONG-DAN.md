@@ -11,7 +11,8 @@ Việc của bạn chỉ là **điền thông tin** và **thay ảnh**.
 ```
 huy_portfolio/
 ├── index.html          → Trang Giới thiệu (hero + thẻ thông tin + 2 mục tiêu)
-├── projects.html       → Trang Dự án (danh sách 6 bài, nhấn để mở chi tiết)
+├── projects.html       → Trang Dự án (danh sách 6 bài, bấm để mở trang riêng)
+├── bai1.html … bai6.html → Trang chi tiết riêng cho từng bài (tải nhẹ hơn)
 ├── summary.html        → Trang Tổng kết (3 phần)
 ├── css/style.css       → Giao diện (KHÔNG cần sửa)
 ├── js/
