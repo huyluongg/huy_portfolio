@@ -270,6 +270,9 @@ h3 { font-size: 1.25rem; }
 
 .media { position: relative; border-radius: var(--radius); overflow: hidden; border: 1px solid var(--border); box-shadow: var(--shadow-md); background: var(--surface-2); aspect-ratio: 16 / 11; }
 .media img { width: 100%; height: 100%; object-fit: cover; }
+/* Ảnh dạng dọc (infographic, poster) — giữ nguyên tỉ lệ, không cắt */
+.media.media-tall { aspect-ratio: auto; max-width: 640px; margin-inline: auto; }
+.media.media-tall img { height: auto; object-fit: contain; }
 .media-badge { position: absolute; top: 12px; left: 12px; z-index: 2; background: color-mix(in srgb, var(--surface) 88%, transparent); backdrop-filter: blur(6px); padding: 6px 12px; border-radius: 100px; font-size: .78rem; font-weight: 700; color: var(--brand); border: 1px solid var(--border); }
 .media-caption { margin-top: 12px; font-size: .84rem; color: var(--text-soft); text-align: center; font-style: italic; }
 
